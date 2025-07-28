@@ -15,11 +15,35 @@ export default function createAbout() {
     chefImage.alt = 'Chef performing teppanyaki';
     chefImage.classList.add('chef-img');
 
-    
+    const timeline = document.createElement('div');
+    timeline.classList.add('timeline', 'fade-in');
+
+    const events = [
+        { year: '1995', text: 'Opened our first location in Kyoto, Japan.' },
+        { year: '2005', text: 'Expanded internationally to the U.S. and Europe.' },
+        { year: '2015', text: 'Awarded Best Japanese Restaurant by Global Foodies.' },
+        { year: '2023', text: 'Opened 100th branch worldwide.' },
+    ];
+
+    events.forEach(event => {
+        const item = document.createElement('div');
+        item.classList.add('timeline-item');
+
+        const year = document.createElement('h3');
+        year.textContent = event.year;
+
+        const desc = document.createElement('p');
+        desc.textContent = event.text;
+
+        item.appendChild(year);
+        item.appendChild(desc);
+        timeline.appendChild(item);
+    });
 
     about.appendChild(heading);
     about.appendChild(description);
     about.appendChild(chefImage);
+    about.appendChild(timeline);
 
     return about;
 }

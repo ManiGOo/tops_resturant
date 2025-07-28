@@ -99,7 +99,7 @@ body {
 .menu-heading {
     font-size: 2rem;
     text-align: center;
-    color: #e76f51;
+    color: #2a9d8f;
     margin-bottom: 1.5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -162,12 +162,14 @@ body {
 .about h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #2a9d8f;
 }
 
 .about p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    color: #555;
 }
 
 .chef-img {
@@ -208,6 +210,91 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* contact.js */
+.contact-page {
+    padding: 2rem;
+    background-color: #f0f9ff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    margin: 3rem auto;
+    animation: fadeIn2 0.5s ease-in-out forwards;
+    text-align: center;
+}
+
+.contact-page h2 {
+    font-size: 2.5rem;
+    color: #2a9d8f;
+    margin-bottom: 0.5rem;
+}
+
+.contact-sub {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.contact-form .input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin: 1rem;
+}
+
+.input-group label {
+    font-weight: 500;
+    margin: 1rem;
+    color: #444;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    background-color: #fff;
+    transition: border-color 0.2s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #2a9d8f;
+    outline: none;
+}
+
+.submit-btn {
+    align-self: flex-start;
+    background-color: #e63946;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #d62828;
 }
 
 /* footer.js */

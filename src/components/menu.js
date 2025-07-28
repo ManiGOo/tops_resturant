@@ -12,7 +12,7 @@ export default function createMenu() {
 
     const items = [
         { name: 'Chicken Teppanyaki', description: 'Grilled chicken with vegetables and teriyaki sauce' },
-        { name: 'Beef Udon', description: 'Thick wheat noodles in a rich beef broth' },
+        { name: 'Pork Udon', description: 'Thick wheat noodles in a rich pork broth' },
         { name: 'Salmon Sushi', description: 'Fresh salmon sushi rolls with wasabi and soy sauce' },
         { name: 'Miso Soup', description: 'Classic Japanese soup with tofu, seaweed, and scallions' },
     ];

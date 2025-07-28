@@ -3,6 +3,7 @@ import createHeader from './components/header.js';
 import createHome from './components/home.js';
 import createMenu from './components/menu.js';
 import createAbout from './components/about.js';
+import createContact from './components/contact.js';
 import createFooter from './components/footer.js';
 
 document.addEventListener('DOMContentLoaded', () => {
